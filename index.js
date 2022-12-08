@@ -1,13 +1,25 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let palindrome = word.split('').reverse().join('')
+
+  if(word === palindrome){
+    return true
+  } else {
+    return false
+  }
 }
 
 /* 
-  Add your pseudocode here
+  declare a variable palindrome - reverses the word 
+  if word is equal to palindrome return true
+  otherwise return false
 */
 
 /*
-  Add written explanation of your solution here
+  the palindrome variable reverses the word 
+  the if statement checks for the condition ....if it is reversed
+  it returns true
+  otherwise return false
 */
 
 // You can run `node index.js` to view these console logs
